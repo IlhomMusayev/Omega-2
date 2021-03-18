@@ -424,7 +424,7 @@ footer{
         width: 820px;
     }
     .header-text h1{
-        font-size: 35px;
+        font-size: 45px;
     }
     .header form input{
         width: 55%;
@@ -436,9 +436,6 @@ footer{
         text-align: center;
         padding: 100px 0;
         height: 100%;
-    }
-    .header-text h1{
-        font-size: 45px;
     }
     .content-title{
         width: 100%;
@@ -474,7 +471,7 @@ footer{
     .header-text h1{
         width: 80%;
         margin: auto;
-        font-size: 35px;
+        font-size: 45px;
     }
     .navbar ul{
         display: none;
@@ -568,6 +565,7 @@ footer{
         display:unset;
         /* width: 10%; */
     }
+    
 }
 @media(max-width: 600px){
     .container{
@@ -588,7 +586,16 @@ footer{
     .content-p{
         widows: 100%;
     }
-
+    .content-title{
+        width: 100%;
+        font-size: 35px;
+    }
+    .content-list-items .content-title{
+        font-size: 35px;
+    }
+    .comment-title{
+        font-size: 35px;
+    }
 
     
 }
