@@ -20,7 +20,7 @@ img {
 }
 
 .container{
-    width: 1050px;
+    width: 1140px;
     margin: 0 auto;
 }
 header{
@@ -32,9 +32,16 @@ header{
     display: flex;
     justify-content: start;
     align-items: center;
-    width: 1350px;
     margin: 0 auto;
     padding: 20px 50px;
+}
+.navbar-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mini-menu{
+    display: none;
 }
 .navbar ul{
     margin-left: 30px;
@@ -55,7 +62,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 150px 0;
+    padding: 120px 0;
 }
 .header h1{
     font-size: 50px;
@@ -72,7 +79,7 @@ header{
     color: #555;
 }
 .header form input{
-    width: 50%;
+    width: 49%;
     padding: 20px 200px 20px 20px;
     font-size: 18px;
     border-radius: 8px;
@@ -87,14 +94,14 @@ header{
     border: none;
     background-color: #F04037;
     color: #fff;
-    /* border-radius: 5px; */
+    border-radius: 5px;
 }
 /* *****************************************Features*********************************** */
 .features{
     background-color: #413E65;
 }
 .features-items{
-    width: 1050px;
+    /* width: 1050px;    */
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -108,7 +115,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 90%;
+    width: 100%;
     background-color: #fff;
     border-radius: 10px;
     padding: 30px 30px;
@@ -206,7 +213,7 @@ header{
     padding: 10px 20px;
     margin: 10px;
     border-radius: 5px;
-    width: 800px;
+    width: 100%;
     background-color: #fff;
 
 }
@@ -222,13 +229,15 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 700px;
-    margin: 20px auto;
+    width: 70%;    
+    margin: 0 auto;
 }
 .contents-1 .content-title{
     width: 100%;
 }
 .contents-1 .content-img{
+    width: 50%;
+    order: 0;
     margin: 80px 0;
 }
 .contents-2 .content-img{
@@ -248,6 +257,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 50px 0;
 }
 
 
@@ -276,7 +286,7 @@ header{
     align-items: center;   
 }
 .testimonial-box{
-    width: 430px;   
+    width: 40%;  
     background-color: #fff;
     border-radius: 3%;
     margin:10px;
@@ -334,7 +344,6 @@ footer{
     justify-content: space-between;
 }
 .footer-item{
-    wid
     margin-bottom: 100px;
 }
 .footer-item h5{
@@ -369,6 +378,253 @@ footer{
     font-weight: 500;
     color: #5454D4;
 }
+
+/*************************************** MOBILE RESPONSIVE *************************************** */
+
+
+
+@media(max-width: 1260px){
+    .container{
+        width: 1000px;
+    }
+    .header form input{
+        width: 51%;
+    }
+    .header form button{
+        left: 35.5%;
+        top: 6%;
+    }
+    .feature-list{
+        width: 90%;
+    }
+    .list-box{
+        width: 90%;
+    }
+    .content-list-items .content-title{
+        width: 100%;
+    }
+}
+
+@media(max-width: 1060px){
+    .container{
+        width: 900px;
+    }
+    .header-text h1{
+        width: 50%;
+        font-size: 45px;
+    }
+    .header form input{
+        width: 53%;
+    }
+    
+}
+
+@media(max-width: 920px){
+    .container{
+        width: 820px;
+    }
+    .header-text h1{
+        font-size: 35px;
+    }
+    .header form input{
+        width: 55%;
+    }
+    .contents{
+        background: none;
+    }
+    .contents .content-items{
+        text-align: center;
+        padding: 100px 0;
+        height: 100%;
+    }
+    .header-text h1{
+        font-size: 45px;
+    }
+    .content-title{
+        width: 100%;
+        font-size: 45px;
+    }
+    .content-text{
+        width: 100%;
+        /* text-align: center; */
+    }
+    .content-items{
+        height: 50vh;
+    }
+    
+    
+    
+}
+@media(max-width: 820px){
+    header{
+        background: none;
+        text-align: center;
+        margin: auto;
+    }
+    .container{
+        width: 720px;
+    }
+    .header p{
+        padding: 30px 0;
+    }
+    .header-text p{
+        width: 80%;
+        margin: auto;
+    }
+    .header-text h1{
+        width: 80%;
+        margin: auto;
+        font-size: 35px;
+    }
+    .navbar ul{
+        display: none;
+    }
+    .mini-menu{
+        display: block;
+        width: 30px;
+        }
+    .mini-menu button{
+        background: none;
+        border: none;
+    }
+    .header form input{
+        width: 80%;
+        padding: 10px;
+    }
+    .header form button{
+        padding: 9px;
+        left: 74%;
+        top: 5%;
+    }
+    .features-items{
+        display: block;
+        /* flex-direction: column; */
+    }
+    .feature-list{
+        width: 100%;
+    }
+    .feature-text{
+        width: 100%;
+    }
+    .feature-text h1{
+        font-size: 35px;
+    }
+    
+    .content-text{
+        width: 100%;
+    }
+    .list-box{
+        width: 100%;
+    }
+    .content-img{
+        order: 1;
+    }
+    .content-text{
+        order: 2;
+    }
+    .comment-p{
+        width: 90%;
+    }
+    .testimonial-boxs{
+        flex-direction: column;
+    }
+    .testimonial-box{
+        width: 100%;  
+    }
+    .list-1, .list-2, .list-3{
+        width: 100%;
+        flex-direction: column;
+    }
+    .list-2{
+        width: 100%;
+        margin: 0;
+    }
+    .content-items-1{
+        flex-direction: column;
+    }
+    .contents-1 .content-img{
+        width: 100%;
+    }
+    .contents-2 form input{
+        width: 100%;
+        display: block;
+        padding: 20px ;
+        font-size: 18px;
+    }
+    
+    .contents-2 form .content-link{
+        width: 100%;
+        border: none;
+        padding: 20px;
+        margin: 20px 0;
+        font-size: 18px;
+        border-radius: 5px;
+    }
+    .footer-items{
+        display: block;
+        text-align: center;
+    }
+    .footer-item{
+        display:unset;
+        /* width: 10%; */
+    }
+}
+@media(max-width: 600px){
+    .container{
+        width: 500px;
+    }
+    .header-text h1{
+        width: 100%;
+        font-size: 35px;
+        margin-bottom: 10px;
+    }
+    .header form input{
+        width: 100%;
+    }
+    .header form button{
+        left: 78%;
+        top: 5%;
+    }
+    .content-p{
+        widows: 100%;
+    }
+
+
+    
+}
+
+@media(max-width: 520px){
+    .container{
+        width: 90%;
+    }
+    .header form button{
+        left: 68%;
+        top: 5%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
